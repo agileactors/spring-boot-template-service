@@ -19,5 +19,5 @@ public interface AbstractCrudService<T extends AbstractPersistable<I>, I extends
       throws MappingNotFoundException;
 
   <U extends AbstractUpdateRequestResourceDto<I>> T update(U updateDto)
-      throws MappingNotFoundException;
+      throws MappingNotFoundException, DomainResourceNotFoundException;
 }

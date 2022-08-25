@@ -23,9 +23,9 @@ public abstract class AbstractPersistable<I extends Serializable> implements Ser
   @PrePersist
   public void onPrePersist() {
     //TODO: Inject clock instance
-    LocalDateTime now = LocalDateTime.now();
+
     if (createdAt == null) {
-      createdAt = now;
+      createdAt = LocalDateTime.now();
     }
   }
 

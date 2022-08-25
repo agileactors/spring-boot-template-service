@@ -55,9 +55,14 @@ abstract class AbstractCrudServiceImpl<
 
   @Override
   public <U extends AbstractUpdateRequestResourceDto<I>> T update(U updateDto)
-      throws MappingNotFoundException {
+      throws MappingNotFoundException, DomainResourceNotFoundException {
+    T existingEntity = getById(updateDto.getId());
+
     T newEntity = (T) conversionService.convert(updateDto,
         mappingService.getResponseMappingType(updateDto.getClass(), ".domain"));
+
+    newEntity.setCreatedAt(existingEntity.getCreatedAt());
+
     return dao.save(newEntity);
   }
 }

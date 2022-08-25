@@ -81,11 +81,12 @@ public abstract class AbstractCrudApi<
 
   @PutMapping("/{id}")
   public R update(@PathVariable I id, @Valid @RequestBody U updateDto)
-      throws MappingNotFoundException {
+      throws MappingNotFoundException, DomainResourceNotFoundException {
 
     updateDto.setId(id);
 
     T newEntity = service.update(updateDto);
+
     return (R) conversionService.convert(newEntity,
         mappingService.getResponseMappingType(newEntity.getClass(), ".response.update"));
   }
