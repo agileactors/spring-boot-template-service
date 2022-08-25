@@ -14,6 +14,6 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17.0.2.8.1'
-          distribution: 'amazon'
+          distribution: 'corretto'
       - name: Run static code tests
         run: ./gradlew check
