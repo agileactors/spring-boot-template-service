@@ -16,4 +16,6 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
       - name: Run static code tests
+        env:
+          PACKAGES_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
         run: ./gradlew check
