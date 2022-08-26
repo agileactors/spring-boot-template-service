@@ -1,5 +1,6 @@
 package com.agileactors.templateservice.service;
 
+import com.agileactors.crud.service.AbstractCrudServiceImpl;
 import com.agileactors.templateservice.dao.DomainObjectDao;
 import com.agileactors.templateservice.domain.DomainObject;
 import java.util.UUID;

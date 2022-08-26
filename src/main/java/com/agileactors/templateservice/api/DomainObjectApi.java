@@ -1,5 +1,6 @@
 package com.agileactors.templateservice.api;
 
+import com.agileactors.crud.api.AbstractCrudApi;
 import com.agileactors.templateservice.domain.DomainObject;
 import com.agileactors.templateservice.dto.CreateDomainObjectRequestDto;
 import com.agileactors.templateservice.dto.GetDomainObjectResponseDto;

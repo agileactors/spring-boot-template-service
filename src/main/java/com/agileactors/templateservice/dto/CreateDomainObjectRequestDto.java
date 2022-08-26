@@ -1,5 +1,6 @@
 package com.agileactors.templateservice.dto;
 
+import com.agileactors.crud.dto.AbstractCreateResourceRequestDto;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import lombok.Data;

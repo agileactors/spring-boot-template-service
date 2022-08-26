@@ -1,5 +1,6 @@
 package com.agileactors.templateservice.domain;
 
+import com.agileactors.crud.domain.AbstractUpdatable;
 import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;

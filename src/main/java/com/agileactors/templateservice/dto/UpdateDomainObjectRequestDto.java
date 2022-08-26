@@ -1,5 +1,6 @@
 package com.agileactors.templateservice.dto;
 
+import com.agileactors.crud.dto.AbstractUpdateRequestResourceDto;
 import java.util.UUID;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

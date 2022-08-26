@@ -1,5 +1,6 @@
 package com.agileactors.templateservice.dto;
 
+import com.agileactors.crud.dto.AbstractGetResourceResponseDto;
 import java.time.LocalDateTime;
 import java.util.UUID;
 import lombok.EqualsAndHashCode;
