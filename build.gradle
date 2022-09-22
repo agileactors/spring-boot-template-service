@@ -12,14 +12,6 @@ sourceCompatibility = '17'
 repositories {
     mavenLocal()
     mavenCentral()
-    maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/agileactors/agile-actors-spring-boot-crud-api")
-        credentials {
-            username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-            password = project.findProperty("gpr.token") ?: System.getenv("PACKAGES_TOKEN")
-        }
-    }
 }
 
 dependencies {
